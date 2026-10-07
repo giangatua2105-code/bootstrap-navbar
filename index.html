@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Navbar</title>
+
+    <!-- Bootstrap 5 CSS từ CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- =============================================
+         NAVBAR BOOTSTRAP
+         - navbar               : khung navbar
+         - navbar-expand-lg     : mở rộng ngang trên màn hình ≥ lg
+         - navbar-dark bg-dark  : nền tối, chữ sáng
+         ============================================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Logo / Brand -->
+        <a class="navbar-brand" href="#">🚀 MyWebsite</a>
+
+        <!-- Nút Toggler (hamburger) cho mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu chính (collapse trên mobile) -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >🏠 Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">📄 About</a>
+            </li>
+
+            <!-- Dropdown Services -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ⚙️ Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">🎨 Web Design</a></li>
+                <li><a class="dropdown-item" href="#">📈 SEO</a></li>
+                <li><a class="dropdown-item" href="#">📱 Mobile App</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">🛠 Khác</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">📞 Contact</a>
+            </li>
+          </ul>
+
+          <!-- Form tìm kiếm bên phải -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="🔍 Tìm kiếm..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Tìm</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =============================================
+         NỘI DUNG MẪU để test cuộn trang
+         ============================================= -->
+    <div class="container mt-5">
+      <div class="text-center mb-5">
+        <h1 class="display-4">Chào mừng đến với MyWebsite</h1>
+        <p class="lead">
+          Thanh điều hướng Bootstrap 5 với dropdown và responsive
+        </p>
+        <a href="#" class="btn btn-primary btn-lg">Bắt đầu ngay</a>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">🎨 Thiết kế đẹp mắt</h5>
+              <p class="card-text">
+                Giao diện hiện đại, responsive trên mọi thiết bị nhờ Bootstrap
+                5.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">⚡ Tốc độ nhanh</h5>
+              <p class="card-text">
+                Tối ưu hóa hiệu suất, tải trang nhanh chóng với CDN toàn cầu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">📱 Responsive</h5>
+              <p class="card-text">
+                Tự động điều chỉnh layout cho desktop, tablet và mobile.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info" role="alert">
+        💡 <strong>Gợi ý:</strong> Thu nhỏ cửa sổ trình duyệt xuống dưới
+        <strong>992px</strong> để thấy menu chuyển thành biểu tượng ☰.
+      </div>
+
+      <p class="text-muted text-center mt-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet.
+        Magnam, cumque. Repellendus, ea!
+      </p>
+    </div>
+
+    <!-- =============================================
+         BOOTSTRAP JS BUNDLE (bao gồm Popper.js)
+         Cần thiết cho: dropdown, collapse, modal, tooltip...
+         ============================================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
